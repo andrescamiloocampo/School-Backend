@@ -30,6 +30,4 @@ public class EventController {
     public Event createEvent(@RequestBody Event event) {            
         return eventRepository.insert(event);
     }
-    
-
 }

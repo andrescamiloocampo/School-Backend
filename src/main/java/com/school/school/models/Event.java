@@ -15,7 +15,7 @@ public class Event {
     @Getter @Setter private String description;
     @Getter @Setter private String date;
     
-    Event(){}
+    public Event(){}
 
     public Event(String id, String title, String name, String description, String date) {
         this.id = id;
