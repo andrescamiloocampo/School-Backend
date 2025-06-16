@@ -1,0 +1,23 @@
+type Query {
+    userById(id: ID!): User
+    allUsers: [User]!
+    allEvents: [Event]! 
+}
+
+type Mutation {
+    createUser(username: String!, rol: String!): User!
+}
+
+type User {
+    id: ID!
+    username: String!
+    rol: String!
+}
+
+type Event {
+    id: ID!
+    title: String
+    name: String
+    description: String
+    date: String
+}
